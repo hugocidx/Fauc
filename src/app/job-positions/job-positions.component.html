@@ -1,0 +1,8 @@
+<!-- job-positions.component.html -->
+
+<h2>Estructuras de Cargo y Personal</h2>
+<ul class="list-group">
+  <li *ngFor="let position of jobPositions" class="list-group-item">
+    {{ position.name }} - {{ position.description }}
+  </li>
+</ul>
