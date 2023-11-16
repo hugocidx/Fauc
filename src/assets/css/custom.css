@@ -371,7 +371,7 @@ Home Page Content Start
 .slider-caption strong {
 	font-size: 36px;
 	font-family: 'Roboto Slab', serif;
-	color: #1cd545;
+    color: #00ff21;
 	line-height: 40px;
 	margin-bottom: 25px;
 	display: block;
@@ -1310,27 +1310,38 @@ Footer Start
 	background: url(../images/footerbg.jpg) no-repeat;
 	width: 100%;
 	float: left;
-	padding: 60px 0 0;
+	padding: 0;
 	background-size: cover;
-}
-.footer-widget {
-	margin-bottom: 50px;
+  }
+  
+  .footer-top {
 	width: 100%;
 	float: left;
-}
-.footer-widget h4 {
+  }
+  
+  .footer-widget {
+	width: 104%; /* Ajusta el ancho según tus necesidades */
+	float: left;
+	margin-bottom: 0px;
+  }
+  
+  .footer-widget h4 {
 	color: #9ccc65;
 	margin-bottom: 15px;
 	font-size: 24px;
 	font-weight: 600;
-}
-.footer-widget a, .footer-widget p {
+  }
+  
+  .footer-widget a,
+  .footer-widget p {
 	color: #cccccc;
-}
-.footer-widget a:hover {
+  }
+  
+  .footer-widget a:hover {
 	color: #9ccc65;
-}
-.footer-widget a.lm {
+  }
+  
+  .footer-widget a.lm {
 	line-height: 40px;
 	font-size: 16px;
 	font-weight: 400;
@@ -1339,123 +1350,112 @@ Footer Start
 	border-radius: 3px;
 	text-transform: uppercase;
 	padding: 0 20px;
-}
-ul.quick-links {
-	margin: 0px;
-	padding: 0px;
+  }
+  
+  ul.quick-links,
+  ul.lastest-products {
+	margin: 0;
+	padding: 0;
 	list-style: none;
-}
-ul.quick-links li {
+  }
+  
+  ul.quick-links li,
+  ul.lastest-products li {
 	line-height: 38px;
-}
-ul.quick-links li a {
+  }
+  
+  ul.quick-links li a,
+  ul.lastest-products li a {
 	color: #ccc;
 	font-size: 16px;
 	font-weight: 600;
-}
-ul.quick-links li a:before {
+  }
+  
+  ul.quick-links li a:hover,
+  ul.lastest-products li a:hover {
+	color: #9ccc65;
+  }
+  
+  ul.quick-links li a:before {
 	content: "\f00c";
 	font-family: FontAwesome;
 	color: #cccccc;
 	font-size: 12px;
 	margin-right: 10px;
-}
-ul.quick-links li a:hover {
-	color: #9ccc65;
-}
-ul.lastest-products {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-ul.lastest-products li {
-	width: 100%;
-	float: left;
-	margin-bottom: 20px;
-}
-ul.lastest-products img {
+  }
+  
+  ul.lastest-products img {
 	border-radius: 5px;
 	float: left;
 	margin-right: 10px;
-}
-ul.lastest-products strong {
+  }
+  
+  ul.lastest-products strong {
 	color: #ccc;
 	font-weight: 500;
 	font-size: 14px;
 	font-family: 'Poppins', sans-serif;
-}
-ul.quick-links li a {
-	font-family: 'Poppins', sans-serif;
-}
-span.pdate {
+  }
+  
+  span.pdate {
 	color: #999999;
 	font-size: 12px;
 	display: block;
-}
-span.pdate i {
+  }
+  
+  span.pdate i {
 	font-style: normal;
 	color: #9ccc65;
-}
-ul.lastest-products li:last-child {
-	margin: 0px;
-}
-.f-product {
+  }
+  
+  .f-product {
 	border-radius: 5px;
 	width: 100%;
 	float: left;
 	background: #fff;
 	overflow: hidden;
 	position: relative;
-}
-.f-product img {
+  }
+  
+  .f-product img {
 	width: 100%;
 	height: auto;
-}
-.fp-text {
+  }
+  
+  .fp-text {
 	padding: 20px;
 	position: relative;
-}
-.fp-text h6 a {
+  }
+  
+  .fp-text h6 a {
 	color: #222222;
-}
-.fp-text strong {
+  }
+  
+  .fp-text strong {
 	position: absolute;
 	right: 20px;
 	top: 20px;
 	font-size: 16px;
 	color: #689f38;
-}
-.footer-widget .owl-theme .owl-nav.disabled+.owl-dots {
-	display: block;
-	position: absolute;
-	right: 5px;
-	bottom: 70px;
-}
-.footer-widget .owl-theme .owl-dots .owl-dot span {
-	width: 10px;
-	height: 10px;
-	margin: 4px;
-	border: 2px solid #bbbbbb;
-	background: #ccc;
-	display: block;
-	-webkit-backface-visibility: visible;
-	transition: opacity .2s ease;
-	border-radius: 0;
-}
-.footer-copyr {
-	border-top: 1px solid rgba(255,255,255,.3);
+  }
+  
+  .footer-copyr {
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
 	padding: 20px 0;
-}
-.footer-copyr img {
+  }
+  
+  .footer-copyr img {
 	max-width: 120px;
 	height: auto;
-}
-.footer-copyr p {
+  }
+  
+  .footer-copyr p {
 	text-align: right;
 	font-size: 14px;
 	color: #ccc;
 	margin: 15px 0 0;
-}
+  }
+  
 /*********************************
 Footer End
 *********************************/
@@ -2371,26 +2371,30 @@ Footer Style 2 Start
 	float: left;
 	background: url(../images/fpat.jpg);
 	margin-top: 70px;
-}
-.footer-widget.about-ecova {
+  }
+  
+  .footer-widget.about-ecova {
 	border-radius: 5px;
 	overflow: hidden;
 	width: 100%;
 	float: left;
 	background: #1b5e20;
 	margin-top: -120px;
-}
-.footer-widget.about-ecova .f2logo {
+  }
+  
+  .footer-widget.about-ecova .f2logo {
 	background: #33691e;
 	text-align: center;
 	padding: 18px 0;
-}
-.footer-widget.about-ecova p {
+  }
+  
+  .footer-widget.about-ecova p {
 	padding: 20px;
 	color: #c8e6c9;
-	margin: 0px;
-}
-.footer-widget.about-ecova .more {
+	margin: 0;
+  }
+  
+  .footer-widget.about-ecova .more {
 	padding: 0 20px 20px;
 	color: #fff;
 	font-size: 14px;
@@ -2398,14 +2402,16 @@ Footer Style 2 Start
 	display: block;
 	text-transform: uppercase;
 	font-weight: 700;
-}
-.footer-style-2 h5 {
+  }
+  
+  .footer-style-2 h5 {
 	font-family: 'Roboto Slab', serif;
 	color: #c8e6c9;
 	position: relative;
 	margin-bottom: 40px;
-}
-.footer-style-2 h5:after {
+  }
+  
+  .footer-style-2 h5:after {
 	position: absolute;
 	left: 0;
 	bottom: -16px;
@@ -2413,8 +2419,9 @@ Footer Style 2 Start
 	height: 1px;
 	content: "";
 	background: #c8e6c9;
-}
-.footer-style-2 h5:before {
+  }
+  
+  .footer-style-2 h5:before {
 	position: absolute;
 	left: 0;
 	bottom: -17px;
@@ -2422,20 +2429,19 @@ Footer Style 2 Start
 	height: 3px;
 	content: "";
 	background: #c8e6c9;
-}
-.footer-style-2 .footer-top {
+  }
+  
+  .footer-style-2 .footer-top {
 	padding: 50px 0 0 0;
-}
-ul.ftags {
+  }
+  
+  ul.ftags {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-}
-ul.ftags li {
-	display: inline-block;
-	margin: 0 6px 10px 0;
-}
-ul.ftags a {
+  }
+  
+  ul.ftags a {
 	background: #444444;
 	display: block;
 	line-height: 35px;
@@ -2444,21 +2450,25 @@ ul.ftags a {
 	color: #c8e6c9;
 	font-size: 14px;
 	font-family: 'Roboto', sans-serif;
-}
-ul.ftags a:hover {
+  }
+  
+  ul.ftags a:hover {
 	background: #66bb6a;
 	color: #fff;
-}
-.footer-style-2 ul.quick-links li a:before {
+  }
+  
+  .footer-style-2 ul.quick-links li a:before {
 	color: #c8e6c9;
-}
-.footer-style-2 ul.quick-links li a {
+  }
+  
+  .footer-style-2 ul.quick-links li a {
 	color: #c8e6c9;
 	font-size: 18px;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
-}
-.footer-social a {
+  }
+  
+  .footer-social a {
 	display: inline-block;
 	border: 1px solid #66bb6a;
 	border-radius: 100%;
@@ -2469,39 +2479,47 @@ ul.ftags a:hover {
 	text-align: center;
 	display: inline-block;
 	font-size: 18px;
-}
-.footer-social a:hover {
+  }
+  
+  .footer-social a:hover {
 	background: #66bb6a;
 	color: #fff;
-}
-.newsletter strong, .footer-social strong {
+  }
+  
+  .newsletter strong,
+  .footer-social strong {
 	display: block;
 	color: #c8e6c9;
 	font-size: 24px;
 	font-weight: 400;
 	margin-bottom: 11px;
 	font-family: 'Roboto Slab', serif;
-}
-.footer-style-2 ul.lastest-products strong a {
+  }
+  
+  .footer-style-2 ul.lastest-products strong a {
 	color: #c8e6c9;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
-}
-.newsletter ul {
-	margin: 0px;
-	padding: 0px;
+  }
+  
+  .newsletter ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 	width: 100%;
 	float: left;
-}
-.newsletter ul li {
+  }
+  
+  .newsletter ul li {
 	margin-right: 10px;
 	float: left;
-}
-.newsletter ul li:last-child {
-	margin: 0px;
-}
-.newsletter input[type=text] {
+  }
+  
+  .newsletter ul li:last-child {
+	margin: 0;
+  }
+  
+  .newsletter input[type=text] {
 	border: 0;
 	background: #fff;
 	border-radius: 5px;
@@ -2509,8 +2527,9 @@ ul.ftags a:hover {
 	line-height: 50px;
 	padding: 0 20px;
 	width: 250px;
-}
-.newsletter input[type=submit] {
+  }
+  
+  .newsletter input[type=submit] {
 	background: #66bb6a;
 	color: #fff;
 	text-transform: uppercase;
@@ -2518,28 +2537,32 @@ ul.ftags a:hover {
 	font-weight: 600;
 	height: 50px;
 	line-height: 50px;
-	border: 0px;
+	border: 0;
 	border-radius: 5px;
 	padding: 0 20px;
-}
-.footer-newsletter .container {
+  }
+  
+  .footer-newsletter .container {
 	border-top: 1px solid #434943;
 	padding: 30px 15px;
-}
-.footer-style-2 .footer-copyr {
+  }
+  
+  .footer-style-2 .footer-copyr {
 	background: #191919;
 	padding: 15px 0;
-	border: 0px;
-}
-.footer-style-2 .footer-copyr p {
-	margin: 0px;
-	padding: 0px;
+	border: 0;
+  }
+  
+  .footer-style-2 .footer-copyr p {
+	margin: 0;
+	padding: 0;
 	color: #666666;
 	text-align: center;
-}
-.footer-social {
+  }
+  
+  .footer-social {
 	padding-left: 70px;
-}
+  }
 /*********************************
 Footer Style 2 End
 *********************************/
