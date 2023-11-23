@@ -1,0 +1,12 @@
+<section class="services-area wf100">
+    <div class="container">
+      <ul>
+        <li *ngFor="let service of services" class="sinfo">
+          <mat-icon>{{ service.icon }}</mat-icon>
+          <h6>{{ service.title }}</h6>
+          <p>{{ service.description }}</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  

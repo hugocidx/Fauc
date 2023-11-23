@@ -1,0 +1,33 @@
+<section class="h2-news wf100 p80">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="section-title-2">
+            <h5>Read Our Latest</h5>
+            <h2>News & Articles</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <a href="#" class="view-more">View More News</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6" *ngFor="let item of news">
+          <div class="blog-post-large">
+            <div class="post-thumb">
+              <a href="#"><i class="fas fa-link"></i></a>
+              <img [src]="item.image" alt="">
+            </div>
+            <div class="post-txt">
+              <ul class="post-meta">
+                <li><i class="fas fa-calendar-alt"></i> {{ item.date }}</li>
+                <li><i class="fas fa-comments"></i> {{ item.comments }}</li>
+              </ul>
+              <h5><a href="{{ item.link }}">{{ item.title }}</a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

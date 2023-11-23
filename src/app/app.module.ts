@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { JobPositionsComponent } from './job-positions/job-positions.component';
@@ -10,6 +9,10 @@ import { MaterialModule } from 'src/assets/material.module';
 import { FooterComponent } from './footer/footer.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { HeaderComponent } from './header/header.component';
+import { AreaServiceComponent } from './area-service/area-service.component';
+import { SaleComponent } from './sale/sale.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -18,16 +21,19 @@ import { HeaderComponent } from './header/header.component';
     ContactsComponent,
   ],
   imports: [
-    BrowserModule,
+    AboutUsComponent,
     AppRoutingModule,
+    AreaServiceComponent,
     BrowserAnimationsModule,
-    MaterialModule,
-    FooterComponent,
+    BrowserModule,
     CarouselComponent,
+    FooterComponent,
     HeaderComponent,
-
+    MaterialModule,
+    ProjectsComponent,
+    SaleComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

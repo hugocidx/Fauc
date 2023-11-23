@@ -1,0 +1,33 @@
+<section class="home2-about wf100 p100 gallery">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-5">
+         <div class="pro-thumb">
+           <img src="../assets/images/h2about.jpg" alt="">
+         </div>
+       </div>
+       <div class="col-md-7">
+         <div class="h2-about-txt">
+           <h3>{{ objetivos[0].title }}</h3>
+           <h2>{{ objetivos[0].subtitle }}</h2>
+           <p>{{ objetivos[0].description }}</p>
+           <a class="aboutus" href="#">{{ objetivos[0].link }}</a>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- numeros y cifras representativas -->
+   <div class="home-facts counter pt80">
+     <div class="container">
+       <div class="row">
+         <div *ngFor="let item of numericas" class="col-lg-3 col-sm-6 col-md-3">
+           <mat-card class="counter-box">
+             <p class="counter-count">{{ item.count }}</p>
+             <p class="ctxt">{{ item.text }}</p>
+           </mat-card>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ 

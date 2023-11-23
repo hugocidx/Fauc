@@ -1,0 +1,28 @@
+<section class="online-shop wf100 p80">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title-2 text-center">
+            <h2>También encontrarás en venta</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!--Pro Box Start-->
+        <div class="col-md-3 col-sm-6" *ngFor="let product of products">
+          <div class="product-box">
+            <div class="pro-thumb">
+              <a href="#">Add To Cart</a>
+              <img src="{{ product.image }}" alt="{{ product.name }}">
+            </div>
+            <div class="pro-txt">
+              <h6><a href="#">{{ product.name }}</a></h6>
+              <p class="pro-price">{{ product.quantity }} x {{ product.price }}</p>
+            </div>
+          </div>
+        </div>
+        <!--Pro Box End-->
+      </div>
+    </div>
+  </section>
+  
