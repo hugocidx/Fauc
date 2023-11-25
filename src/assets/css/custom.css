@@ -6087,6 +6087,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
 	margin-right: -3px;
 	margin-left: -3px;
 }
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 .our-success-story .section-title-2 h2 {
 	margin: 0 0 8px;
 }

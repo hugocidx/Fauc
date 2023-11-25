@@ -1,35 +1,24 @@
 <header class="header-style-2">
-    <nav class="navbar navbar-expand-lg">
-      <!-- aqui va el logo -->
-       <!-- <img src="../../assets/images/h2logo.png" alt="logo"> -->
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i> </button>
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-             <li class="nav-item"> <a class="nav-link" href="../../index.html">Home</a> </li>
-             <li class="nav-item"> <a class="nav-link" href="../MainFiles/about.html">Nosotros</a> </li>
-             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="../MainFiles/events-grid.html"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Eventos </a>
-                <ul class="dropdown-menu" >
-                   <li><a href="../MainFiles/events-grid.html">Evento 1</a></li>
-                   <li><a href="../MainFiles/events-grid-2.html">Evento 2</a></li>
-                   <li><a href="../MainFiles/events-grid-3.html">Evento 3</a></li>
-                </ul>
-             </li>
-             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="../MainFiles/causes.html"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Causas </a>
-                <ul class="dropdown-menu" >
-                   <li><a href="../MainFiles/causes.html">Causa 1</a></li>
-                   <li><a href="../MainFiles/causes-list.html">Causa 2</a></li>
-                </ul>
-             </li>
-             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="../MainFiles/contact.html"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Contacto </a>
-                <ul class="dropdown-menu" >
-                   <li><a href="../MainFiles/contact-one.html">Contacto Uno</a> </li>
-                   <li><a href="../MainFiles/contact-two.html">Contacto Dos</a> </li>
-               </ul>
-             </li>
-          </ul>
-       </div>
-    </nav>
- </header>
+   <nav class="navbar navbar-expand-lg">
+     <button
+       aria-controls="navbarSupportedContent"
+       aria-expanded="false"
+       aria-label="Toggle navigation"
+       class="navbar-toggler"
+       data-target="#navbarSupportedContent"
+       data-toggle="collapse"
+       type="button"
+     >
+       <i class="fas fa-bars"></i>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav mr-auto">
+         <a class="nav-link" [routerLink]="['/home']">Home</a>
+         <a class="nav-link" [routerLink]="['/estructuras-de-cargo']">Conocenos</a>
+         <a class="nav-link" [routerLink]="['/eventos']">Eventos</a>
+         <a class="nav-link" [routerLink]="['/causas']">Causas</a>
+         <a class="nav-link" [routerLink]="['/contacto']">Contacto</a>
+       </ul>
+     </div>
+   </nav>
+</header>
