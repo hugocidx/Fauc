@@ -7,7 +7,6 @@ import { MatCardModule } from '@angular/material/card';
   standalone:true,
   imports:[MatCardModule,CommonModule],
   templateUrl: './about-us.component.html',
-  styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent {
   objetivos: any[] = [
@@ -23,9 +22,13 @@ export class AboutUsComponent {
     }
   ];
   numericas: any[] = [
-    { count: 6, text: 'Grandes proyectos' },
-    { count: 20, text: 'Hectáreas plantadas' },
-    { count: 300, text: 'Ganado y Animales' },
-    { count: 5900, text: 'Estudiantes Recibidos' },
+    { count: 60, text: 'Hectáreas alfalfa para heno' },
+    { count: 70, text: 'Hectáreas maiz silo' },
+    { count: 230, text: 'Vacas en produccion' },
+    { count: 330, text: 'Hectáreas de superficie' },
+    { count: 400, text: 'm2 en Investigacion' },
+    { count: 600, text: 'Bovinos de leche' },
+    { count: 800, text: 'm2 en Laboratorios' },
+    { count: 2200, text: 'Estudiantes en terreno 2023' },
   ];
 }

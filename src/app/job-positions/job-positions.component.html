@@ -1,55 +1,64 @@
-<!-- <div class="example-action-buttons">
-  <button mat-button (click)="accordion.openAll()">Expand All</button>
-  <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+<div class="cards">
+  <!-- personal 1 -->
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-icon mat-icon >account</mat-icon>
+      <mat-card-title>Javiera Gonzales</mat-card-title>
+      <mat-card-title>Gerente Administrativo</mat-card-title>
+    </mat-card-header>
+    <img
+      mat-card-image
+      src="/Fauc/assets/images/personal/javiera.png"
+      alt="Photo of javiera"
+    />
+    <mat-card-content>
+      <p>Ingeniera en agronegocios de la Universidad de Chile</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>telefono</button>
+      <button mat-button>correo</button>
+    </mat-card-actions>
+  </mat-card>
+  <mat-icon></mat-icon>
+  <!-- personal 2 -->
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-icon>account</mat-icon>
+      <mat-card-title>Savka Aldunate</mat-card-title>
+      <mat-card-title>Administradora Agricola</mat-card-title>
+    </mat-card-header>
+    <img
+      mat-card-image
+      src="/Fauc/assets/images/personal/savka.png"
+      alt="Photo of a Savka"
+    />
+    <mat-card-content>
+      <p>Ingeniera Agronomo de la Pontificia Universidad Catolica de Chile</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>telefono</button>
+      <button mat-button>correo</button>
+    </mat-card-actions>
+  </mat-card>
+  <mat-icon></mat-icon>
+  <!-- personal 3 -->
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-icon>account</mat-icon>
+      <mat-card-title>Jose Manuel Guevara</mat-card-title>
+      <mat-card-title>Administrador Ganadero</mat-card-title>
+    </mat-card-header>
+    <img
+      mat-card-image
+      src="/Fauc/assets/images/personal/jose manuel.png"
+      alt="Photo of a jose manuel"
+    />
+    <mat-card-content>
+      <p>Veterinario de la Universidad Mayor</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>telefono</button>
+      <button mat-button>correo</button>
+    </mat-card-actions>
+  </mat-card>
 </div>
-<mat-accordion class="example-headers-align" multi>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title> Personal data </mat-panel-title>
-      <mat-panel-description>
-        Type your name and age
-        <mat-icon>account_circle</mat-icon>
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <mat-form-field>
-      <mat-label>First name</mat-label>
-      <input matInput />
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label>Age</mat-label>
-      <input matInput type="number" min="1" />
-    </mat-form-field>
-  </mat-expansion-panel>
-  <mat-expansion-panel disabled>
-    <mat-expansion-panel-header>
-      <mat-panel-title> Destination </mat-panel-title>
-      <mat-panel-description>
-        Type the country name
-        <mat-icon>map</mat-icon>
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <mat-form-field>
-      <mat-label>Country</mat-label>
-      <input matInput />
-    </mat-form-field>
-  </mat-expansion-panel>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title> Day of the trip </mat-panel-title>
-      <mat-panel-description>
-        Inform the date you wish to travel
-        <mat-icon>date_range</mat-icon>
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <mat-form-field>
-      <mat-label>Date</mat-label>
-      <input
-        matInput
-        [matDatepicker]="picker"
-        (focus)="picker.open()"
-        readonly
-      />
-    </mat-form-field>
-    <mat-datepicker #picker></mat-datepicker>
-  </mat-expansion-panel>
-</mat-accordion> -->

@@ -1,26 +1,47 @@
 <body>
   <div class="wrapper home2">
-    <!--Header Inicio-->
-    <app-header></app-header>
-    <router-outlet></router-outlet>
-    <!--Header Fin-->
-    <!--Slider Inicio-->
-    <app-carousel></app-carousel>
-    <!--Slider Fin-->
-    <!--Area de servicio Inicio-->
-    <app-area-service></app-area-service>
-    <!--Area de servicio Fin-->
-    <!--Seccion SobreNosotros Inicio-->
+    <!--Header-->
+    <header class="header-style-2">
+      <nav class="navbar navbar-expand-lg">
+        <button
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-target="#navbarSupportedContent"
+          data-toggle="collapse"
+          type="button"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <a class="nav-link" (click)="showView('home')">Home</a>
+            <a class="nav-link" (click)="showView('estructuras-de-cargo')">Conocenos</a>
+            <a class="nav-link" (click)="showView('eventos')">Eventos</a>
+            <a class="nav-link" (click)="showView('causas')">Causas</a>
+            <a class="nav-link" (click)="showView('contacto')">Contacto</a>
+          </ul>
+        </div>
+      </nav>
+   </header>
+    <!--Slider y Área de Servicio, solo se mostrarán si la ruta es diferente a '/estructuras-de-cargo'-->
+    <ng-container *ngIf="selectedView === 'estructuras-de-cargo'">
+      <app-job-positions></app-job-positions>
+    </ng-container>
+    <ng-container *ngIf="selectedView !== 'estructuras-de-cargo'">
+      <!--Slider-->
+      <app-carousel></app-carousel>
+      <!--Area de servicio-->
+      <app-area-service></app-area-service>
+    </ng-container>
+    <!--Seccion SobreNosotros-->
     <app-about-us></app-about-us>
-    <!--Seccion SobreNosotros Fin-->
-    <!--Projects Inicio-->
+    <!--Seccion Proyectos-->
     <app-projects></app-projects>
-    <!--Projects Fin-->
-    <!--Componente de ventas Inicio-->
+    <!--Componente de Ventas -->
     <app-sale></app-sale>
-    <!--Componente de ventas Fin-->
-    <!--Footer Inicio-->
+    <!--Footer-->
     <app-footer></app-footer>
-    <!--Footer Fin-->
   </div>
 </body>
