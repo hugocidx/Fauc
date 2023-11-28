@@ -17,14 +17,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <a class="nav-link" (click)="showView('home')">Home</a>
-            <a class="nav-link" (click)="showView('estructuras-de-cargo')">Conocenos</a>
+            <a class="nav-link" (click)="showView('estructuras-de-cargo')"
+              >Conocenos</a
+            >
             <a class="nav-link" (click)="showView('eventos')">Eventos</a>
             <a class="nav-link" (click)="showView('causas')">Causas</a>
-            <a class="nav-link" (click)="showView('contacto')">Contacto</a>
           </ul>
         </div>
       </nav>
-   </header>
+    </header>
     <!--Slider y Área de Servicio, solo se mostrarán si la ruta es diferente a '/estructuras-de-cargo'-->
     <ng-container *ngIf="selectedView === 'estructuras-de-cargo'">
       <app-job-positions></app-job-positions>
@@ -39,6 +40,8 @@
     <app-about-us></app-about-us>
     <!--Seccion Proyectos-->
     <app-projects></app-projects>
+    <!--Componente de Ventas -->
+    <app-floating-contact></app-floating-contact>
     <!--Componente de Ventas -->
     <app-sale></app-sale>
     <!--Footer-->

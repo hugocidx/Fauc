@@ -25,9 +25,6 @@ export class AppComponent {
       case 'causas':
         this.title = 'Causas';
         break;
-      case 'contacto':
-        this.title = 'Contacto';
-        break;
       // Agrega más casos según las vistas que tengas
       default:
         this.title = 'Fundacion Agronomica UC';

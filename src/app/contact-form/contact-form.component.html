@@ -1,0 +1,14 @@
+<form class="formulario" [formGroup]="contactForm" (ngSubmit)="submitForm()">
+  <mat-form-field>
+    <input matInput placeholder="tucorreo@correo.cl" type="email" formControlName="email" required />
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput placeholder="Mensaje" formControlName="message" required></textarea>
+  </mat-form-field>
+  <div class="buttons">
+    <button type="submit" [disabled]="contactForm.invalid">
+      Enviar Mensaje
+    </button>
+    <button type="button" (click)="closeForm()">Cerrar</button>
+  </div>
+</form>
