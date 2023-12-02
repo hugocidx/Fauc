@@ -3,6 +3,8 @@
   bottom: 20px;
   right: 20px;
   z-index: 1000; /* Ajusta el z-index según sea necesario */
+  height: 60px;
+  width: 60px;
 }
 .floating-contact-form {
   position: fixed;
@@ -16,4 +18,10 @@
 }
 .floating-contact-form.show {
   display: block;
+}
+.mat-mdc-fab.mat-accent,
+.mat-mdc-mini-fab.mat-accent {
+  --mdc-fab-container-color: #35573936;
+  /* --mdc-fab-icon-color: #000000; */
+  --mat-mdc-fab-color: #39b943;
 }

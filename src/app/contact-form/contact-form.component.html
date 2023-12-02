@@ -1,14 +1,50 @@
-<form class="formulario" [formGroup]="contactForm" (ngSubmit)="submitForm()">
-  <mat-form-field>
-    <input matInput placeholder="tucorreo@correo.cl" type="email" formControlName="email" required />
-  </mat-form-field>
-  <mat-form-field>
-    <textarea matInput placeholder="Mensaje" formControlName="message" required></textarea>
-  </mat-form-field>
-  <div class="buttons">
-    <button type="submit" [disabled]="contactForm.invalid">
-      Enviar Mensaje
-    </button>
-    <button type="button" (click)="closeForm()">Cerrar</button>
-  </div>
-</form>
+<div class="login-box">
+  <form action="https://formsubmit.co/hugocidx@gmail.com" method="POST">
+    <div class="input-group">
+      <mat-form-field>
+        <input
+          matInput
+          name="name"
+          placeholder="tu nombre"
+          required
+          type="text"
+        />
+      </mat-form-field>
+    </div>
+    <mat-form-field>
+      <input
+        matInput
+        name="email"
+        placeholder="tu@correo.cl"
+        required
+        type="email"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        name="subject"
+        placeholder="Asunto"
+        required
+        type="text"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        matInput
+        name="comments"
+        placeholder="Mensaje"
+        required
+        type="text"
+      ></textarea>
+    </mat-form-field>
+    <div class="btns">
+      <button mat-icon-button (click)="closeForm()">
+        <mat-icon>close</mat-icon>
+      </button>
+      <button class="login-btn" target="a_blanck" type="submit">
+        Enviar Mensaje
+      </button>
+    </div>
+  </form>
+</div>
