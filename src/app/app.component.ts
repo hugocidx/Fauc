@@ -19,9 +19,9 @@ export class AppComponent {
       case 'home':
         this.title = 'Home';
         break;
-      case 'eventos':
-        this.title = 'Eventos';
-        break;
+      // case 'eventos':
+      //   this.title = 'Eventos';
+      //   break;
       case 'causas':
         this.title = 'Causas';
         break;

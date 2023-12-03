@@ -1644,20 +1644,20 @@ section.services-area ul li:after {
 	opacity: 0;
 }
 section.services-area ul li:hover:after {
-	height: 250px;
-	opacity: 1;
+	height: 50px;
+	opacity: 0.5;
 }
 section.services-area ul li.active p, section.services-area ul li.active h6, .services-area ul li:hover p, .services-area ul li:hover h6 {
-	color: #fff;
+	color: #66bb6a;
 }
 section.services-area ul li.active:after {
 	height: 250px;
 	opacity: 1;
-	color: #fff;
+	color: #66bb6a;
 }
 .aboutus {
 	display: inline-block;
-	color: #fff;
+	color: #66bb6a;
 	border-radius: 3px;
 	line-height: 44px;
 	padding: 0 25px;

@@ -7,7 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CarouselComponent } from './carousel/carousel.component';
 import { FloatingContactComponent } from './floating-contact/floating-contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
+// import { HeaderComponent } from './header/header.component';
 import { JobPositionsComponent } from './job-positions/job-positions.component';
 import { MaterialModule } from 'src/assets/material.module';
 import { NgModule } from '@angular/core';
@@ -34,7 +34,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     ContactFormComponent,
     FloatingContactComponent,
     FooterComponent,
-    HeaderComponent,
+    // HeaderComponent,
     JobPositionsComponent,
     MatDialogModule,
     MaterialModule,
