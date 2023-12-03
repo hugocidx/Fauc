@@ -15,6 +15,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SaleComponent } from './sale/sale.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 @NgModule({
   providers: [],
   bootstrap: [AppComponent],
@@ -24,6 +25,7 @@ import { MatDialogModule } from '@angular/material/dialog';
   imports: [
     AboutUsComponent,
     AppRoutingModule, 
+    ContactPageComponent,
     AreaServiceComponent,
     BrowserAnimationsModule,
     BrowserModule,

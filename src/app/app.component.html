@@ -21,7 +21,7 @@
               >Conocenos</a
             >
             <a class="nav-link" (click)="showView('eventos')">Eventos</a>
-            <a class="nav-link" (click)="showView('causas')">Causas</a>
+            <a class="nav-link" (click)="showView('contacto')">Contacto</a>
           </ul>
         </div>
       </nav>
@@ -30,18 +30,21 @@
     <ng-container *ngIf="selectedView === 'estructuras-de-cargo'">
       <app-job-positions></app-job-positions>
     </ng-container>
-    <ng-container *ngIf="selectedView !== 'estructuras-de-cargo'">
+    <ng-container *ngIf="selectedView === 'contacto'">
+      <app-contact-page></app-contact-page>
+    </ng-container>
+    <ng-container *ngIf="selectedView !== 'estructuras-de-cargo' && selectedView !== 'contacto'">
       <!--Slider-->
       <app-carousel></app-carousel>
       <!--Area de servicio-->
       <app-area-service></app-area-service>
+      <!--Seccion Proyectos-->
+      <app-projects></app-projects>
     </ng-container>
     <!--Seccion SobreNosotros-->
     <app-about-us></app-about-us>
-    <!--Seccion Proyectos-->
-    <app-projects></app-projects>
     <!--Componente de Ventas -->
-    <app-floating-contact></app-floating-contact>
+    <!-- <app-floating-contact></app-floating-contact> -->
     <!--Componente de Ventas -->
     <app-sale></app-sale>
     <!--Footer-->
