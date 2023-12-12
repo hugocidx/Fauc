@@ -3,27 +3,25 @@
     <!--Header-->
     <header class="header-style-2">
       <nav class="navbar navbar-expand-lg">
-        <div 
-         id="navbarSupportedContent">
+        <div id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <a class="nav-link" (click)="showView('home')">Home</a>
-            <a class="nav-link" (click)="showView('estructuras-de-cargo')"
-              >Conocenos</a
-            >
-            <!-- <a class="nav-link" (click)="showView('eventos')">Eventos</a> -->
+            <a class="nav-link" (click)="showView('conocenos')">Conocenos</a>
             <a class="nav-link" (click)="showView('contacto')">Contacto</a>
           </ul>
         </div>
       </nav>
     </header>
-    <!--Slider y Área de Servicio, solo se mostrarán si la ruta es diferente a '/estructuras-de-cargo'-->
-    <ng-container *ngIf="selectedView === 'estructuras-de-cargo'">
+    <!--Slider y Área de Servicio, solo se mostrarán si la ruta es diferente a '/conocenos'-->
+    <ng-container *ngIf="selectedView === 'conocenos'">
       <app-job-positions></app-job-positions>
     </ng-container>
     <ng-container *ngIf="selectedView === 'contacto'">
       <app-contact-page></app-contact-page>
     </ng-container>
-    <ng-container *ngIf="selectedView !== 'estructuras-de-cargo' && selectedView !== 'contacto'">
+    <ng-container
+      *ngIf="selectedView !== 'conocenos' && selectedView !== 'contacto'"
+    >
       <!--Slider-->
       <app-carousel></app-carousel>
       <!--Area de servicio-->

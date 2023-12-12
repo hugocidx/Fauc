@@ -9,28 +9,20 @@
 // })
 // export class HeaderComponent {
 //   public selectedView: string | undefined;
-//   // Datos para la sección de estructuras de cargo y personal
-//   title = "Fundacion Agronomica UC";
+//   title = 'Fundacion Agronomica UC';
 //   showView(view: string) {
 //     this.selectedView = view;
-//     // Actualizar el título según la vista seleccionada
 //     switch (view) {
-//       case "estructuras-de-cargo":
-//         this.title = "Estructuras de Cargo y Personal";
+//       case 'conocenos':
 //         break;
-//       // Agrega más casos según las vistas que tengas
-//       case "home":
-//         this.title = "Home";
+//       case 'home':
+//         this.title = 'Home';
 //         break;
-//       case "eventos":
-//         this.title = "Eventos";
+//       case 'contacto':
+//         this.title = 'contacto';
 //         break;
-//       case "causas":
-//         this.title = "Causas";
-//         break;
-//       // Agrega más casos según las vistas que tengas
 //       default:
-//         this.title = "Fundacion Agronomica UC";
+//         this.title = 'Fundacion Agronomica UC';
 //     }
 //   }
 // }
