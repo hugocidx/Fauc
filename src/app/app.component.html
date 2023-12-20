@@ -1,40 +1,33 @@
 <body>
   <div class="wrapper home2">
-    <!--Header-->
-    <header class="header-style-2">
-      <nav class="navbar navbar-expand-lg">
-        <div id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <a class="nav-link" (click)="showView('home')">Home</a>
-            <a class="nav-link" (click)="showView('conocenos')">Conocenos</a>
-            <a class="nav-link" (click)="showView('contacto')">Contacto</a>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <!--Slider y Área de Servicio, solo se mostrarán si la ruta es diferente a '/conocenos'-->
-    <ng-container *ngIf="selectedView === 'conocenos'">
-      <app-job-positions></app-job-positions>
-    </ng-container>
-    <ng-container *ngIf="selectedView === 'contacto'">
-      <app-contact-page></app-contact-page>
-    </ng-container>
-    <ng-container
-      *ngIf="selectedView !== 'conocenos' && selectedView !== 'contacto'"
-    >
-      <!--Slider-->
-      <app-carousel></app-carousel>
-      <!--Area de servicio-->
-      <app-area-service></app-area-service>
-    </ng-container>
+
+    <app-header class="header" ></app-header>
+
+    <!--Slider-->
+    <app-carousel></app-carousel>
+
+    <!--Área de Servicio-->
+    <app-area-service></app-area-service>
+
     <!--Seccion SobreNosotros-->
     <app-about-us></app-about-us>
+
+    <!--Seccion job position-->
+    <section id="conocenos" class="conocenos" >
+      <app-job-positions></app-job-positions>
+    </section>
+
     <!--Seccion Proyectos-->
     <app-projects></app-projects>
-    <!--Componente de Ventas -->
-    <!-- <app-floating-contact></app-floating-contact> -->
+    
+    <!--Seccion contacto-->
+    <section id="contacto">
+      <app-contact></app-contact>
+    </section>
+
     <!--Componente de Ventas -->
     <app-sale></app-sale>
+
     <!--Footer-->
     <app-footer></app-footer>
   </div>

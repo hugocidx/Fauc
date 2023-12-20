@@ -13,9 +13,9 @@ import { MaterialModule } from 'src/assets/material.module';
 import { NgModule } from '@angular/core';
 import { ProjectsComponent } from './projects/projects.component';
 import { SaleComponent } from './sale/sale.component';
-import { ContactFormComponent } from './contact-form/contact-form.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { ContactPageComponent } from './contact-page/contact-page.component';
+import { ContactComponent } from './contact/contact.component';
+import { HeaderComponent } from './header/header.component';
 @NgModule({
   providers: [],
   bootstrap: [AppComponent],
@@ -25,16 +25,16 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
   imports: [
     AboutUsComponent,
     AppRoutingModule, 
-    ContactPageComponent,
+    ContactComponent,
     AreaServiceComponent,
     BrowserAnimationsModule,
     BrowserModule,
     BrowserModule,
     CarouselComponent,
-    ContactFormComponent,
+    ContactComponent,
     FloatingContactComponent,
     FooterComponent,
-    // HeaderComponent,
+    HeaderComponent,
     JobPositionsComponent,
     MatDialogModule,
     MaterialModule,

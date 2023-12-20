@@ -18,7 +18,7 @@ export class AboutUsComponent {
       description2: `2. Efectuar labores de extensión, divulgación y servicios en el campo de su competencia.`,
       description3: `3. Propender a la formación y perfeccionamiento de docentes e investigaciones en el campo de las ciencias agropecuarias.`,
       description4: `4. Administrar las estaciones experimentales agrícolas de la Universidad. Si algo está caliente en la economía actual, está ahorrando dinero, incluido unbroad range of green businesses helping people save energy, water, and other resources.`,
-      link: "Mas Sobre la Fundacion",
+      // link: "Mas Sobre la Fundacion",
     },
   ];
   numericas: any[] = [
