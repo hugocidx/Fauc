@@ -2046,7 +2046,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 /*****************  News And Articles  ****************/
 
 .h2-news {
-	background: url(../images/news-artilcesbg.jpg) no-repeat;
+	/* background: url(../images/news-artilcesbg.jpg) no-repeat; */
 	background-size: cover;
 }
 .blog-post-large {
