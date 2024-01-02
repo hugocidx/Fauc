@@ -21,18 +21,14 @@
             "outputPath": "dist/fauc",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/app/app.component.scss",
               "src/assets/css/custom.css",
               "src/assets/css/color.css",
@@ -42,15 +38,19 @@
               "src/assets/css/prettyPhoto.css",
               "src/assets/css/all.min.css"
             ],
-            "scripts": [  
-            "src/assets/js/jquery-3.3.1.min.js",
-            "src/assets/js/jquery-migrate-1.4.1.min.js",
-            "src/assets/js/popper.min.js",
-            "src/assets/js/bootstrap.min.js",
-            "src/assets/js/owl.carousel.min.js",
-            "src/assets/js/jquery.prettyPhoto.js",
-            "src/assets/js/isotope.min.js",
-            "src/assets/js/custom.js"]
+            "scripts": [
+              "src/assets/js/jquery-3.3.1.min.js",
+              "src/assets/js/jquery-migrate-1.4.1.min.js",
+              "src/assets/js/popper.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/jquery.prettyPhoto.js",
+              "src/assets/js/isotope.min.js",
+              "src/assets/js/custom.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -100,16 +100,10 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"

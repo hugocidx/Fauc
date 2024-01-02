@@ -1,14 +1,37 @@
 <!-- header.component.html -->
 <header class="header-style-2">
   <nav class="navbar navbar-expand-lg fixed-top">
-    <div id="navbarSupportedContent">
-      <!-- Menú de navegación -->
+    <!-- <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      (click)="toggleMenu()"
+    >
+      <mat-icon *ngIf="!isMenuOpen">menu</mat-icon>
+      <mat-icon *ngIf="isMenuOpen">close</mat-icon>
+    </button> -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Menú de navegación desplegable -->
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" (click)="scrollToSection('conocenos')">Conocenos</a>
+          <a class="nav-link" (click)="scrollToSection('objetivos')"
+            >Objetivos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('conocenos')"
+            >Conocenos</a
+          >
         </li>
         <li class="nav-item">
           <a class="nav-link" (click)="scrollToSection('contacto')">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('venta')">Venta</a>
         </li>
       </ul>
     </div>

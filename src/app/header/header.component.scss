@@ -2,16 +2,13 @@
 .cards-jobs{
   display: inline-flex;
 }
-
 .example-card {
   max-width: 250px;
   margin: auto; // Esto centrará las tarjetas horizontalmente
-
   img {
     width: 100%; // Usa width en lugar de max-width
     height: auto; // Ajusta la altura automáticamente para mantener la proporción
     object-fit: cover; // Esto asegura que la imagen se ajuste dentro de la tarjeta sin distorsionarla
   }
-
-  
 }
+
