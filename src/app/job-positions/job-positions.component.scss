@@ -1,17 +1,22 @@
-// app-job-positions.component.scss
-.cards-jobs{
+.cards-jobs {
   display: inline-flex;
+  flex-wrap: wrap; // Permite que las tarjetas se envuelvan a la siguiente línea si no hay suficiente espacio
 }
-
 .example-card {
   max-width: 250px;
-  margin: auto; // Esto centrará las tarjetas horizontalmente
-
+  margin: 10px auto; // Ajusta el margen para un mejor aspecto
+  box-sizing: border-box; // Incluye el margen en el ancho de la tarjeta
   img {
-    width: 100%; // Usa width en lugar de max-width
-    height: auto; // Ajusta la altura automáticamente para mantener la proporción
-    object-fit: cover; // Esto asegura que la imagen se ajuste dentro de la tarjeta sin distorsionarla
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
-
-  
+}
+@media screen and (max-width: 650px) {
+  // .cards-jobs {
+  //   display: block;
+  // }
+  .example-card {
+    max-width: 100%; // Aprovecha al máximo el ancho disponible
+  }
 }
