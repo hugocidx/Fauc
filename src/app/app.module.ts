@@ -39,7 +39,6 @@ import { HeaderComponent } from './header/header.component';
     MatDialogModule,
     MaterialModule,
     ProjectsComponent,
-    SaleComponent,
 ]
 })
 export class AppModule {}
