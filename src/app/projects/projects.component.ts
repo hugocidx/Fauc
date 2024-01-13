@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   standalone:true,
   imports:[CommonModule],
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styles: [``]
 })
 export class ProjectsComponent {
   news = [

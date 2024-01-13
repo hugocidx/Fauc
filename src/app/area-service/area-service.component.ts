@@ -8,7 +8,7 @@ import { MatListModule } from '@angular/material/list';
   standalone:true,
   imports:[MatIconModule,MatListModule,CommonModule],
   templateUrl: './area-service.component.html',
-  styleUrls: ['./area-service.component.scss']
+  styles: [``]
 })
 export class AreaServiceComponent {
   services = [
